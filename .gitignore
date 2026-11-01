@@ -1,0 +1,30 @@
+# Machine-heavy, large, or regenerable content stays out of git (ADR-0006 in spirit: Q14)
+students/*/attachments/
+
+# Raw mail bodies are a rebuildable cache; the manifest of what was processed IS tracked.
+students/*/mail/raw/
+
+# Alumni follow the same rule (ADR-0007): sent mail bodies and attachments stay out of git,
+# the roster, wikis, thesis index and manifests are tracked.
+alumni/*/attachments/
+alumni/*/mail/raw/
+alumni/theses/abstracts/
+
+# Paper library: the catalogue is tracked, the PDFs are not (publisher licensing + size).
+papers/files/
+papers/text/
+
+# Retrieval index is derived data.
+index/*.sqlite
+index/*.sqlite-*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+uv.lock
+
+# Scratch
+.scratch/
+.ingest.lock
+.rebuild.lock

@@ -1,0 +1,1 @@
+I want to frequently collect and analyze contents from <redacted-email> and then setup research direction and   next step for my graduated students. The AI agent suggestions may mail to the corresponding students.
